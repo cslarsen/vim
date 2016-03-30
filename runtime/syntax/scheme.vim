@@ -1,6 +1,6 @@
 " Vim syntax file
-" Language:	Scheme (R5RS + some R6RS extras)
-" Last Change:	2012 May 13
+" Language:	Scheme (R5RS + some R6RS and R7RS extras)
+" Last Change:	2016 Mar 30
 " Maintainer:	Sergey Khorev <sergey.khorev@gmail.com>
 " Original author:	Dirk van Deun <dirk@igwe.vub.ac.be>
 
@@ -76,6 +76,8 @@ syn keyword schemeSyntax quote quasiquote unquote unquote-splicing
 syn keyword schemeSyntax define-syntax let-syntax letrec-syntax syntax-rules
 " R6RS
 syn keyword schemeSyntax define-record-type fields protocol
+" R7RS
+syn keyword schemeSyntax define-library import export rename only except include
 
 syn keyword schemeFunc not boolean? eq? eqv? equal? pair? cons car cdr set-car!
 syn keyword schemeFunc set-cdr! caar cadr cdar cddr caaar caadr cadar caddr
